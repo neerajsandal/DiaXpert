@@ -2,7 +2,6 @@
 #pip install pandas
 #pip install sklearn
 
-
 # IMPORT STATEMENTS
 import streamlit as st
 import pandas as pd
@@ -40,12 +39,12 @@ x_train, x_test, y_train, y_test = train_test_split(x,y, test_size = 0.2, random
 
 # FUNCTION
 def user_report():
-  Pregnancies = st.sidebar.slider('Pregnancies', 0,17, 3 )
+  Pregnancies = st.sidebar.slider('Pregnancies', 0,10, 3 )
   Glucose = st.sidebar.slider('Glucose', 0,200, 120 )
-  BloodPressure = st.sidebar.slider('Blood Pressure', 0,122, 70 )
+  BloodPressure = st.sidebar.slider('Blood Pressure', 0,140, 70 )
   SkinThickness = st.sidebar.slider('Skin Thickness', 0,100, 20 )
   Insulin = st.sidebar.slider('Insulin', 0,846, 79 )
-  BMI = st.sidebar.slider('BMI', 0,67, 20 )
+  BMI = st.sidebar.slider('BMI', 0,40, 20 )
   DiabetesPedigreeFunction = st.sidebar.slider('Diabetes Pedigree Function', 0.0,2.4, 0.47 )
   Age = st.sidebar.slider('Age', 21,88, 33 )
 

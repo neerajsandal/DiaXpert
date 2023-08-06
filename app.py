@@ -26,7 +26,7 @@ df = pd.read_csv(location)
 # df = Path(__file__).parents[1] / 'diabetes.csv'
 
 # HEADINGS
-st.title('Diabetes Prediction')
+st.title('DiaXpert')
 st.sidebar.header('Patient Data')
 st.subheader('Training Data Stats')
 st.write(df.describe())
